@@ -1,0 +1,16 @@
+name = "fotolive-api"
+main = "worker.js"
+compatibility_date = "2026-11-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fotolive-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Add secrets with:
+# npx wrangler secret put ADMIN_SECRET
+# npx wrangler secret put CLOUDINARY_API_SECRET
+# Add CLOUDINARY_CLOUD_NAME and CLOUDINARY_API_KEY as Worker variables/secrets.

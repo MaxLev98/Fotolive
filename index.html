@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <title>Fotolive — фотографии вашего события</title>
+  <meta name="description" content="Соберите фотографии вашего мероприятия в одном месте с Fotolive.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Fotolive — главная"><span class="brand-mark">f</span><span>fotolive</span></a>
+    <a class="top-link" href="#how">Как это работает</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> МОМЕНТЫ, КОТОРЫЕ ОСТАЮТСЯ</div>
+        <h1>Все фотографии<br>вашего события.<br><em>В одном месте.</em></h1>
+        <p class="lead">Создайте общий фотоальбом, поделитесь QR-кодом с гостями и собирайте воспоминания без приложений и регистрации.</p>
+        <a class="primary-button" href="#how">Открыть возможности <span>↗</span></a>
+        <div class="trust-note"><span class="avatars">● ● ●</span> Один альбом — фотографии всех гостей</div>
+      </div>
+      <div class="hero-art" aria-label="Пример фотогалереи">
+        <div class="art-glow"></div>
+        <div class="photo-card photo-back"><div class="photo-scene scene-two"></div></div>
+        <div class="photo-card photo-front"><div class="photo-scene scene-one"></div><div class="photo-caption"><span>THE DAY TO REMEMBER</span><b>Our best moments</b></div></div>
+        <div class="floating-tag"><span class="tag-icon">↗</span><span><b>Все вместе</b><small>В одном альбоме</small></span></div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="section-heading"><div class="eyebrow">ПРОСТО И УДОБНО</div><h2>Воспоминания собираются сами</h2><p>Гостям не нужно устанавливать приложение или создавать аккаунт.</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-icon">01</div><h3>Создайте альбом</h3><p>Укажите название и дату мероприятия — Fotolive подготовит персональную страницу.</p></article>
+        <article class="step"><div class="step-icon">02</div><h3>Покажите QR-код</h3><p>Разместите его на welcome-зоне, столах или отправьте гостям заранее.</p></article>
+        <article class="step"><div class="step-icon">03</div><h3>Собирайте фото</h3><p>Гости сканируют код, загружают снимки, а фотографии появляются в общей галерее.</p></article>
+      </div>
+    </section>
+
+    <section class="album-preview">
+      <div><div class="eyebrow">ОДНО МЕСТО ДЛЯ ВСЕХ КАДРОВ</div><h2>Ваше событие.<br><em>Ваши воспоминания.</em></h2><p>Красивый альбом, который удобно открыть с любого телефона.</p></div>
+      <div class="preview-grid"><div class="preview-tile tile-a"></div><div class="preview-tile tile-b"></div><div class="preview-tile tile-c"></div><div class="preview-tile tile-d"></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="./"><span class="brand-mark">f</span><span>fotolive</span></a><span>Фотографии, которые объединяют.</span><span>© <span id="year"></span> Fotolive</span></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
